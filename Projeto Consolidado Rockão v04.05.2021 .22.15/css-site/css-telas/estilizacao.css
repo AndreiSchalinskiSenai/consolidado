@@ -1,0 +1,832 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*-------------------------header nav----------------------------*/
+
+header .navbar .container-fluid .logo-ong .logo{
+	width: 160px;
+	height: 80px;
+	margin: 0 0 0 20px;
+	border-radius: 10px;
+	border:black;
+}
+
+header .navbar .container-fluid .logo-ong .logo:hover{
+	border:2px solid #FFC300;
+	width: 162px;
+	height: 82px;
+	transition: 0.1s;
+}
+
+header .navbar .collapse .navbar-nav .nav-link{
+	color:#FFC300;
+	font-weight: bold;
+}
+
+
+@media(min-width: 1000px){
+	header .navbar .collapse .navbar-nav .nav-link:hover{
+		font-size: 16.5px;
+		color:white;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+
+	header .navbar .container-fluid .navbar-nav .botao-adotar:hover{
+		background-color: white;
+	}
+
+	header .navbar .container-fluid .navbar-nav .opcao-me-adote{
+		display: none;
+	}
+}
+
+header .navbar .container-fluid .botao-hambur{
+		background-color: #FFC300;
+		color:black;
+}
+
+@media(max-width: 1000px){
+	.nav-link:hover{
+		font-size: 22px;
+		transition: 0.3s;
+		border-radius: 7px;
+		margin: 6px 0 0 0;
+		padding: 10px 10px;
+		box-shadow: 2px 3px 5px black;
+		border:3.5px solid black;
+		color:white;
+	}
+
+	header .navbar .collapse .navbar-nav .nav-link:active{
+		background-color: #FFC300;
+		color:black;
+		transition: 0s;
+	}
+
+	header .navbar .container-fluid .navbar-nav .botao-adotar{
+		display: none;
+	}
+
+}
+
+header .navbar .container-fluid .navbar-nav .botao-adotar{
+	margin: 0 0 0 10px;
+}
+
+/*---------------------parte de carousel tela inicial-------------------*/
+
+.botao-passar-imagem:hover{
+	font-weight: bold;
+}
+
+@media(min-width: 768px){
+
+	.carousel-item{
+		padding-top: 100px
+	}
+
+	.textos-carousel-imagem{
+		transition: 1s;
+		background-color: rgba(0, 0, 0, 0.8);
+		padding:0px 10px;
+		box-shadow: 10px 10px 20px black;
+		margin:0 0 20px 0;	
+		width: 100%;
+		left: 0%;
+	}
+}
+
+
+
+.textos-carousel-imagem h5{
+	text-decoration: underline;
+}
+
+.textos-carousel-imagem p, .textos-carousel-imagem h5{
+	color: #FFC300;
+}
+
+@media(max-width: 768px){
+
+	.carousel-item{
+		padding-top: 100px
+	}
+
+	.navbar-nav{
+		box-shadow: 10px 10px 10px black;
+		border-radius: 10px;
+		padding: 10px 10px;
+	}
+
+	.textos-carousel-imagem{
+		transition: 1s;
+		position: relative;
+		top: 0px;
+		left: -0%;
+		margin: auto;
+		border-radius: 0;
+		background-color: #212529;
+		padding:10px 10px;
+		box-shadow: 10px 10px 20px black;
+	}
+
+
+	.textos-carousel-imagem p, .textos-carousel-imagem h5{
+		color: #FFC300;
+		font-weight: bold;
+		border-radius: 5px;
+	}
+
+	.textos-carousel-imagem p:hover{
+		border:3px solid black;
+		color: #FFC300;
+		box-shadow: 5px 5px 5px black;
+		transition: 0.5s;
+		font-size: 15px;
+		margin: 5px 0 5px 0;
+
+	}
+
+	.botoes-pass-imagem{
+		margin: 0 0 200px 0;
+	}
+
+	.botoes-imagem-carousel{
+		display: none;
+	}
+
+	
+}
+
+@media(max-width: 400px){
+
+	.botoes-pass-imagem{
+		margin: 0 0 260px 0;
+	}
+}
+/*---------------------Ambiente Quem somos--------------*/
+.quem-somos{
+	background-color: #FFC300;
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+}
+
+section .titulo-quem-somos{
+	text-align: center;
+	color:black;
+	padding-top: 40px;
+}
+
+section .amb-conteudo-quem-somos{
+	display: inline-flex;
+	align-items: center;
+	padding: 20px 0;
+}
+
+section .imagem-animcao-quem-somos{
+	width: 30%;
+	height: 30%;
+	margin: auto;
+}
+
+section .amb-texto-quem-somos{
+	padding: 10px 0;
+	border-radius: 10px;
+	width: 50%;
+	height: 400px;
+	margin-right: auto;
+	overflow: auto;
+}
+
+@media(min-width:900px){
+	section .amb-texto-quem-somos{
+		background-color: #212529;
+		overflow: auto;
+		color: white;
+		padding: 10px 10px;
+		transition: 0.8s;
+		box-shadow: 10px 13px 10px black;
+	}
+}
+
+@media(max-width:900px){
+
+	section .amb-texto-quem-somos{
+		background-color: #212529;
+		overflow: auto;
+		color: white;
+		padding: 10px 10px;
+		transition: 0.8s;
+		width: 90%;
+		margin: auto;
+		margin-top: -30px;
+		box-shadow: 10px 13px 10px black;
+	}
+
+	section .amb-conteudo-quem-somos{
+		display: inline;
+	}
+
+	section .imagem-animcao-quem-somos{
+		position: relative;
+		width: 60%;
+		height: 60%;
+		left: 20%;
+	}
+}
+
+section .amb-texto-quem-somos::-webkit-scrollbar {
+	width: 18px;
+  }
+  
+  section .amb-texto-quem-somos::-webkit-scrollbar-track {
+	background: #212529;
+	height: 20px;
+  }
+  
+  section .amb-texto-quem-somos::-webkit-scrollbar-thumb {
+	background-color: #212529; 
+	border: 5px solid #FFC300;
+	border-radius: 2px;
+  }
+
+/*---------------------Ambiente Eventos--------------*/
+.eventos{
+	background-color: #212529;
+	width: 100%;
+	height: auto;
+	padding: 20px 0px;
+}
+
+section .titulo-eventos {
+	text-align: center;
+	color:#FFC300;
+	padding-top: 40px;
+
+}
+
+section .amb-texto-eventos {
+	color: white;
+	text-align: justify;
+	max-width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	height: auto;
+}
+
+/*------------------Carousel Eventos------------------------------*/
+
+.slider {
+	width: 50%;
+	margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+section .imagem-evento{
+	width: 300px;
+	height: 280px;
+	opacity: 1;
+	border-radius: 15px;
+	cursor: pointer;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+section .imagem-evento:hover{
+	border: 3px solid #FFC300;
+}
+
+.amb-imagens-eventos {
+	width: 85%;
+	margin: auto;
+	margin-top: 50px;
+	padding-right: 8px;
+}
+
+@media (max-width: 1100px){
+	section .imagem-evento{
+		margin: auto;
+		width: 260px;
+		height: 260px;
+	}
+}
+
+@media (max-width: 1000px){
+	section .imagem-evento{
+		margin: auto;
+		width: 240px;
+		height: 240px;
+	}
+}
+
+@media (max-width: 280px){
+	section .imagem-evento{
+		margin: auto;
+		width: 200px;
+		height: 200px;
+	}
+}
+
+/*-------------------------Tela Parcerias----------------------*/
+
+.parcerias{
+	background-color: #FFC300;
+	width: 100%;
+	height: auto;
+	padding: 20px 0px;
+}
+
+section .titulo-parcerias{
+	color:black;
+	text-align: center;
+	padding-top: 40px;
+}
+
+section .amb-texto-parcerias{
+	text-align: justify;
+	max-width: 50%;
+	height: auto;
+	padding: 20px 0;
+	margin-right: auto;
+}
+
+#imagem-animacao-parcerias{
+	width: 30%;
+	height: 30%;
+	margin: auto;
+}
+
+section #conteudo-parcerias{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+section .amb-carousel-parcerias{
+	width: 85%;
+	margin: 0 auto;
+}
+
+section .imagem-parcerias{
+	width: 180px;
+	height: 180px;
+	margin: auto;
+	border-radius: 15px;
+	cursor: pointer;
+	
+}
+
+section .imagem-parcerias:hover{
+	border:3px solid black;
+}
+
+@media(max-width:700px){
+	section #conteudo-parcerias{
+		display: inline-block;
+	}
+	section .amb-texto-parcerias{
+		text-align: justify;
+		max-width: 100%;
+		padding: 0 50px;		
+	}
+	section #imagem-animacao-parcerias{
+		width: 80%;
+		height: 80%;
+		margin-left: 55px;
+		transition: 0.8s;
+	}
+
+	section .amb-carousel-parcerias{
+		margin: 10px auto;
+	}
+
+	section .imagem-parcerias{
+		width: 180px;
+		height: 180px;
+		margin: auto;
+	}
+}
+
+@media(max-width:470px){
+	section #imagem-animacao-parcerias{
+		width: 80%;
+		height: 80%;
+		margin-left: 35px;
+		transition: 0.8s;
+	}
+}
+
+@media(max-width:375px){
+	section .imagem-parcerias{
+		width: 240px;
+		height: 240px;
+		margin: auto;
+	}
+}
+
+@media(max-width:280px){
+	section .imagem-parcerias{
+		margin: auto;
+		width: 200px;
+		height: 200px;
+	}
+}
+/*-------------------------Tela Informações----------------------*/
+.informacoes{
+	background-color: #212529;
+	width: 100%;
+	height: auto;
+	padding: 20px 0px;
+}
+
+section .titulo-informacoes{
+	color:#FFC300;
+	text-align: center;
+	padding-top: 40px;
+}
+
+section .amb-texto-informacoes{
+	color: white;
+	text-align: justify;
+	max-width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	height: auto;
+}
+
+section .amb-imagens-informacoes{
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+section .imagem-informacoes{
+	width: 420px;
+	height: 420px;
+	margin: auto;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+section .imagem-informacoes:hover{
+	border:3px solid #FFC300;
+}
+
+@media(max-width:1200px){
+
+	section .imagem-informacoes{
+		width: auto;
+		height: auto;
+	}
+}
+
+@media(max-width:1024px){
+	section .imagem-informacoes{
+		width: 300px;
+		height: 300px;
+		margin: auto;
+	}
+}
+
+@media(max-width:768px){
+	section .imagem-informacoes{
+		width: 290px;
+		height: 290px;
+		margin: auto;
+	}
+
+	section .amb-imagens-informacoes{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+}
+
+@media(max-width:400px){
+	section .imagem-informacoes{
+		width: 240px;
+		height: 240px;
+		margin: auto;
+	}
+
+	section .amb-imagens-informacoes{
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+}
+
+@media(max-width:280px){
+	section .imagem-informacoes{
+		margin: auto;
+		width: 200px;
+		height: 200px;	
+	}
+}
+
+/*--------------------TELA ME ADOTE---------------*/
+
+.me-adote{
+	background-color: #FFC300;
+	width: 100%;
+	height: auto;
+	padding: 20px 0px;
+}
+
+section .titulo-me-adote{
+	color:black;
+	text-align: center;
+	padding-top: 50px;
+}
+
+section .amb-carousel-me-adote{
+	width: 100%;
+	display: inline-flex;
+	margin-top: 30px;
+}
+
+section .carousel-me-adote{
+	width: 350px;/*é aqui que preciso mexer*/
+	background-color: #212529;
+	padding: 0 10px;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 10px 13px 10px black;
+	margin-bottom: 20px;
+}
+
+section .amb-imagens-me-adote{
+	width: auto;
+	height: auto;
+	
+	margin-bottom: 20px;
+}
+
+section .imagem-me-adote{
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 30px;
+}
+
+section .imagem-me-adote:hover{
+	border: 4px solid #FFC300;
+}
+
+section .amb-texto-me-adote{
+	color: white;
+	overflow: auto;
+	text-align: justify;
+	height: 100px;
+	width: auto;
+	box-shadow: inset 0 0 5em black;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 10px 5px;
+	word-wrap:initial;
+	word-spacing: -2px;
+}
+
+section .amb-botao-adotar{
+	width: auto;
+	display: flex;
+	justify-content: center;
+	
+}
+
+section .botao-adotar{
+	background-color: #FFC300;
+	color: black;
+	width: 90%;
+	height: 44px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+section .botao-adotar:hover{
+	border: 2px solid black;
+}
+
+section .botao-adotar:active{
+	background-color: black;
+	color: #FFC300;
+	transition: 0.0s;
+}
+
+section .amb-texto-me-adote::-webkit-scrollbar {
+	width: 8px;
+
+  }
+  
+  section .amb-texto-me-adote::-webkit-scrollbar-track {
+	background: white;
+	height: 20px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+  }
+  
+  section .amb-texto-me-adote::-webkit-scrollbar-thumb {
+	background-color: white; 
+	border: 5px solid rgb(255, 174, 0);
+	border-radius: 2px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+  }
+
+@media(max-width:860px){
+
+	section .amb-carousel-me-adote{
+		display: inline;
+		transition: 0.8s;
+	}
+
+	section .carousel-me-adote{
+		margin: auto;
+		margin-top: 20px;
+		width: 90%;	
+	}
+}
+
+@media(max-width:860px){
+
+	section .imagem-me-adote{
+		margin-top: 25px;
+	}
+}
+
+@media(max-width:600px){
+
+	section .amb-divs-carousel-me-adote{
+		display: inline;
+		transition: 0.8s;
+	}
+
+	section .carousel-me-adote{
+		margin: auto;
+		margin-top: 20px;
+		width: 80%;	
+	}
+
+	section .imagem-me-adote{
+		margin-top: 25px;
+	}
+}
+
+/*--------------------CAROUSEL TELA ME ADOTE---------------*/
+
+section .amb-divs-carousel-me-adote{
+	width: auto;
+	margin: flex;
+	display: flex;
+}
+
+/*---------------------TELA QUERO AJUDAR-------------------*/
+
+.quero-ajudar{
+	background-color: #212529;
+	width: 100%;
+	height: auto;
+	padding: 20px 0px;
+}
+
+section .titulo-quero-ajudar{
+	color:#FFC300;
+	text-align: center;
+	padding-top: 40px;
+}
+
+section .amb-texto-quero-ajudar{
+	color: white;
+	text-align: justify;
+	max-width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	height: auto;
+}
+
+form{
+	display: inline;
+	width: 40%;
+	margin: auto;
+	margin-left: 10%;
+	border-radius: 20px;
+}
+
+label{
+	color: #FFC300;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+#input-nome, #input-email{
+	height: 60px;
+}
+
+.inputs-quero-ajudar{
+	font-size: 22px;
+	width: 100%;
+	border-radius: 5px;
+	height: 40px;
+	padding: 10px 10px;
+	outline: 0;
+	border: 1px solid #FFC300;
+	box-shadow: inset 0 0 1em #76818d;
+}
+
+#input-text{
+	resize: none;
+	height: 200px;
+	overflow: auto;
+	font-size: 22px;
+}
+
+#botao-quero-ajudar{
+	width: 100%;
+	height: 50px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+section #botao-quero-ajudar:active{
+	background-color: black;
+	color: #FFC300;
+	transition: 0.2s;
+}
+
+section .inputs-quero-ajudar:hover{
+	border: 3px solid #FFC300;
+	transition: 0.2s;
+}
+
+section #botao-quero-ajudar:hover{
+	border: 1.5px solid #FFC300;
+}
+
+.amb-formulario-quero-ajudar{
+	display: flex;
+}
+
+
+section #input-text::-webkit-scrollbar {
+	width: 18px;
+	cursor: pointer;
+  }
+  
+  section #input-text::-webkit-scrollbar-track {
+	background: #212529;
+	height: 20px;
+	
+  }
+  
+  section #input-text::-webkit-scrollbar-thumb {
+	background-color: #212529; 
+	border: 7px solid #FFC300;
+	
+  }
+
+#imagem-quero-ajudar{
+	width: 500px;
+	height: 400px;
+	margin: auto;
+}
+
+@media(max-width:900px){
+	
+	form{
+		width: 80%;
+		margin: auto;
+		margin-left: 10%;
+	}
+
+	#imagem-quero-ajudar{
+		display: none;
+	}
+}
